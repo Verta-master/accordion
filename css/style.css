@@ -55,12 +55,12 @@ body {
 .subcategory:active {
   color: #ffae00;
 }
-.container {
+.accordion {
   position: relative;
 }
 .product {
   position: absolute;
-  top: 35px;
+  top: 0;
   left: 200px;
   width: calc(100% - 400px);
   z-index: 10;
