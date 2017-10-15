@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Accordion</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <section data-accordion-group class="accordion">
+    <section data-accordion class="container">
+      <button data-control class="category">Категория 1</button>
+      <div data-content>
+        <article data-accordion>
+          <button data-control class="subcategory">Подкатегория 1</button>
+          <div data-content class="product">
+            <article data-accordion>
+              <button data-control class="product-item">Товар 1</button>
+              <div data-content class="product-about">
+                <article>Описание товара 1</article>
+              </div>
+            </article>
+            <article data-accordion>
+              <button data-control class="product-item">Товар 2</button>
+              <div data-content class="product-about">
+                <article>Описание товара 2</article>
+              </div>
+            </article>
+            <article data-accordion>
+              <button data-control class="product-item">Товар 3</button>
+              <div data-content class="product-about">
+                <article>Описание товара 3</article>
+              </div>
+            </article>
+          </div>
+        </article>
+        <article data-accordion>
+          <button data-control class="subcategory">Подкатегория 2</button>
+          <div data-content class="product">
+            <article data-accordion>
+              <button data-control class="product-item">Товар 4</button>
+              <div data-content class="product-about">
+                <article>Описание товара 4</article>
+              </div>
+            </article>
+            <article data-accordion>
+              <button data-control class="product-item">Товар 5</button>
+              <div data-content class="product-about">
+                <article>Описание товара 5</article>
+              </div>
+            </article>
+          </div>
+        </article>
+      </div>
+    </section>
+      
+    <section data-accordion class="container">
+      <button data-control class="category">Категория 2</button>
+      <div data-content>
+        <article data-accordion>
+          <button data-control class="subcategory">Подкатегория 3</button>
+          <div data-content class="product">
+            <article data-accordion>
+              <button data-control class="product-item">Товар 6</button>
+              <div data-content class="product-about">
+                <article>Описание товара 6</article>
+              </div>
+            </article>
+            <article data-accordion>
+              <button data-control class="product-item">Товар 7</button>
+              <div data-content class="product-about">
+                <article>Описание товара 7</article>
+              </div>
+            </article>
+          </div>
+        </article>
+      </div>
+    </section>
+  </section>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.accordion.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.accordion [data-accordion]').accordion();
+    });
+  </script>
+</body>
+</html>
